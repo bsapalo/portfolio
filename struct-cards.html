@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Brandon Sapalo: Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Click here to find out more about me!" />
+	<meta name="keywords" content="Brandon Sapalo" />
+	<meta name="author" content="Brandon Sapalo" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Brandon Sapalo's Portfolio Website"/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content="Click here to find out more about me!"/>
+	<meta name="twitter:title" content="Brandon Sapalo's Portfolio Website" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:description" content="Click here to find out more about me!" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="icon" type="image/png" href="images/personal-logo2.png">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="index.html"><span>BRANDON</span><span>SAPALO</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="colorlib-active"><a href="work.html">Work</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="https://www.instagram.com/b_reel/"><i class="icon-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/sapalo/"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+			<div class="colorlib-work">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta">Work</span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Struct Club: Edit Mode Cards</h2>
+						</div>
+					</div>
+
+					<!-- PROBLEM SPACE -->
+					<h2>Context & Problem Space</h2>
+					<p>Struct Club is a creator platform for fitness instructors to create music-inspired classes.<span style="color:#4F2A8D;font-weight: bold;">
+						"Edit Mode" is a set of views that allows users to add moves (i.e. Squats) to songs from Spotify.</span>
+						After 30 qualitative user interviews, our team found that users were creating very long classes: 30-50+ minutes. 
+					</p>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/struct-club.png">
+						</div>
+						<div class="col-md-5 sticky-parent">
+							<div>
+								<h2>
+									Users told us the editing process was taking OVER an hour.
+								</h2>
+								<div class="project-desc">
+									<p>For a 30-40 min class, the average user spent around an hour creating an entire workout.
+									This results from the process of adding selecting a playlist, adding time cues, and choosing a workout.
+									Many also users pointed out that that there were too many steps to edit an individual moves.
+									User's wanted to create more classes, faster (but also wanted maintain the accuracy our
+									editing process). The solution needed to achieve several goals:
+									<ul>
+										<li style="color:#4F2A8D;font-weight: bold;">Reduce the overall time spent creating a class</li>
+										<li style="color:#4F2A8D;font-weight: bold;">Reduce the number of steps to edit a single move</li>
+										<li style="color:#4F2A8D;font-weight: bold;">Maintain accuracy in editing process (in seconds)</li>
+									</ul>
+								</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- RESEARCH -->
+					<br><br><br><br><br>
+					<h2>Research & Solution Formation</h2>
+					<p>The first step is always research. First, I took a look at similar applications that utilize a timeline editng view and 
+						segments which require extra attention (iMovie, Google Calendar, and the Photos application). After evaluating each app, 
+						<span style="color:#4F2A8D;font-weight: bold;">
+						I asked myself: "how did this app provide a solution to my problem and how can I improve upon it to server my users?"
+						</span>
+					</p>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/i-movie.png">
+							<img class="img-responsive" src="images/apple-music.png">
+						</div>
+						<div class="col-md-5 sticky-parent">
+							<div>
+								<h2>
+									Not many available solutions
+								</h2>
+								<div class="project-desc">
+									<p>
+										Each application presented options for my solution. At first glance, I found that iMovie followed very 
+										similar conventions to Struct Club. It utilized a scrollable timeline and presented options at the bottom
+										of the screen selected segments. However, <a style="color:#4F2A8D;font-weight: bold;">iMovie's edit mode had the same pitfalls of Struct Club. The edit 
+										process was arduous and I estimated about 8 taps per segment I edited. Google Calendar events (or segments)
+										also required about 6-7 taps per event to change dates, times, recurrences, and color coding.</a> Although, it 
+										required less overall time (likely resulting from the nature of events -> they don't happen all at once).
+									</p>
+								</div>
+								<h2>
+									Formulating a new solution
+								</h2>
+								<div class="project-desc">
+									<p>
+										In turn, I had to turn to unconvential sources like Spotify and Apple Music for inspiration. I took a song overlay from Apple Music 
+										(like the one on the left) and deconstructed its elements. It contained an icon/album cover, title, important information, 
+										and buttons to navigate to and from the next item. In many ways, a song overlay could be classified as a song "card." The card has 
+										key advantages:
+										<ul>
+											<li style="color:#4F2A8D;font-weight: bold;">Contains only the most important information & buttons for the segment</li>
+											<li style="color:#4F2A8D;font-weight: bold;">Hides all unnecessay functionality below it</li>
+											<li style="color:#4F2A8D;font-weight: bold;">Allows for quick navigation between segments (or songs)</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- WIREFRAMING -->
+					<br><br><br><br><br>
+					<h2>Wireframing & Prototyping</h2>
+					<p>
+						The first step of Wireframing (in my design process) is sketching on paper. Then I meet with stakeholders (i.e. my lovely CEO, Amira, and amazing engineer, Eann)
+						to consider business strategy, resource constraints, and feasibility. Next, I begin drafting wireframes & the iteration process follows for the next few weeks.  
+						Ultimately, <a style="color:#4F2A8D;font-weight: bold;">the process completes once all stakeholders feel the design (1) achieves our users' goals and (2) aligns
+							 with our overall strategy.</a> Especially in a start-up, it's also important to consider what SMALL changes will have a BIG impact (80% results 20% effort).
+					</p>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/baseline-struct.png">
+						</div>
+						<div class="col-md-5 sticky-parent">
+							<div>
+								<h2>Where do I start?</h2>
+								<div class="project-desc">
+									<p>
+										First, let's take a look at <a style="color:#4F2A8D;font-weight: bold;">the previous version of Edit Mode</a>. 
+										There are several visual elements & functionality that need to be addressed to solve our problem. 
+										
+										<ul>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Timeline:</a> Users can horizontally scroll across a timeline to view their entire workout.</li>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Segment:</a> A segment represents a workout move (i.e. Jumping Jacks) with an intensity (indicated by the color).</li>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Mark:</a> A mark is a draggable element which represents the end/beginning of a new segment.</li>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Song:</a> Helps users visually see their location within the song.</li>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Music Controller:</a> All workouts are companied with curlated playlists from users.</li>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Add Mark:</a> Users typically listen through playlists & add marks at points of musical transition. 
+												This is key to creating fantastic music-inspired workouts.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br><br>
+					<div class="col-md-5">
+						<h2>Sketches</h2>
+						<p>
+							Just to reiterate: users told us that the editing process took too long (over 1 hour). So the <a style="color:#4F2A8D;font-weight: bold;">solution</a> needed to achieve several goals... 
+							<ul>
+								<li style="color:#4F2A8D;font-weight: bold;">Reduce the overall time spent creating a class</li>
+								<li style="color:#4F2A8D;font-weight: bold;">Reduce the number of steps to edit a single move</li>
+								<li style="color:#4F2A8D;font-weight: bold;">Maintain accuracy to the second</li>
+							</ul>
+							<br>
+							My solution draws inspiration from Apple Music song overlays (or "cards"). The <a style="color:#4F2A8D;font-weight: bold;">cards</a> have key advantages that could help streamline the edit process...  
+							<ul>
+								<li style="color:#4F2A8D;font-weight: bold;">Contains only the most important information & buttons for the segment</li>
+								<li style="color:#4F2A8D;font-weight: bold;">Hides all unnecessay functionality below it</li>
+								<li style="color:#4F2A8D;font-weight: bold;">Allows for quick navigation between segments (or songs)</li>
+							</ul>
+							<br>
+							On the right, I outline some of my ideas for "cards" of segments. The card basline sketches depict how a user would navigate from card to card. 
+							The card arrangement demonstrates how the data of a segment would be displayed on a card. <a style="color:#4F2A8D;font-weight: bold;">
+								The highlighted blue indicates the chosen design by stakeholders. </a>
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/sketches-1.png">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/drafts.png">
+						</div>
+						<div class="col-md-5 sticky-parent">
+							<div>
+								<h2>Drafts</h2>
+								<div class="project-desc">
+									<p>
+										After producing low fidelity wireframes, <a style="color:#4F2A8D;font-weight: bold;">I moved onto mid-to-high fidelity wireframing in Figma.</a> I produced a number of draft 
+										frames, but these are the highlights! At every step in the design process, it's important to reevaluate whether or not the 
+										solutions create value for users. Sometimes, I can walk myself into the "wouldn't it be cool if" conversation without considering 
+										my users' goals. 
+									</p>
+									<p>
+										How do cards help users achieve their goals? 
+										<ul>
+											<li style="color:#4F2A8D;font-weight: bold;">Reduces the number of steps to edit a SINGLE segment from 8 to 5 (no navigation to new screen)</li>
+											<li style="color:#4F2A8D;font-weight: bold;">Reduces the number of steps to navigate to a NEW segment from 3 to 1 (left & right arrows)</li>
+											<li style="color:#4F2A8D;font-weight: bold;">Maintains editing accuracy to the second (timeline intact)</li>
+										</ul>
+									</p>
+									<p>
+										Now that the design aligns with user goals, I met with stakeholders to determine which iteration would present the best image to 
+										our users. SPOILER: The chosen design has sparkles around it!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br><br>
+					<div class="col-md-5">
+						<h2>Final Version</h2>
+						<p>
+							The final version of the my design...
+						</p>
+						<p>
+							Now users can happily create workouts with ease. Navigating quickly from one segment to another, user will 
+							be able to spend more time curating workouts and less time hassling between views. The edit process for a single 
+							segment also now requires 3 less steps, so users will spend even less time per segment. 
+						</p>
+						<h2>Number of steps decreased from 11 to 6...</h2>
+						<p style="color:#4F2A8D;font-weight: bold;">
+							The final version presents an elegant visual hierarchy, aligns with the Struct Club's design system, and helps users achieve their goals. 
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/cards-final.png">
+						</div>
+					</div>
+					<br>
+					<h2>Interactions</h2>
+					<p>
+						Check out the all the re-designed functionality for Edit Mode Cards!
+					</p>
+					<div class="row">
+						<div class="col-md-11 image-content">
+							<img class="img-responsive" src="images/interaction-1.png">
+							<img class="img-responsive" src="images/interaction-2.png">
+							<img class="img-responsive" src="images/interaction-5.png">
+							<img class="img-responsive" src="images/interaction-6.png">
+							<img class="img-responsive" src="images/interaction-9.png">
+						</div>
+					</div>
+
+					<!-- REFLECTION-->
+					<br><br><br><br><br>
+					<h2>Reflection</h2>
+					<p>				
+								
+						Edit Mode Cards tested my design skills more than any other project that summer. I struggled not only in juggling other projects in Marketing and Quality Assurance, but 
+						also in developing my own processes as a ONE-PERSON UX team. I had to learn quickly and develop standards for my work which didn't exist. I guess that's 
+						the beauty of start-ups. I also felt some pressure to not skrew everything up! Edit Mode is a core feature set for Struct Club.
+						In then end, I can confidently say I've learned a lot about myself and developing design processes:
+						<ul>
+							<li><a style="color:#4F2A8D;font-weight: bold;">Start out with simple sketches before wireframes:</a> I fell into the trap of starting with high-fidelity, 
+								and I ended up creating a lot of work for myself. I spent too much time trying to make everything pixel perfect when I wasn't even sure it was the solution.
+							</li>
+							<li><a style="color:#4F2A8D;font-weight: bold;">Don't spend so much time prototyping everything for drafts:</a> This is another time-saving tip. I spent waaay too
+								much time creating fancy animations in Figma. Part of me really enjoyed working with the tool, but it ended up costing me stress closer to the deadline.
+							</li>
+							<li><a style="color:#4F2A8D;font-weight: bold;">Take extensive notes & ask tons of questions in stakeholder meetings:</a> Stakeholders have many of strong opinions 
+								(especially when your stakeholder is the CEO). Their time is also very limited. In initial meetings, I found myself taking her opinions at face value and then 
+								not quite reaching her expectations. Non-designers do no speak in design terms, so it's imperative that you get a clear understanding for their suggestions.  
+							</li>
+							<li><a style="color:#4F2A8D;font-weight: bold;">Believe in your ideas and avoid impostor syndrome:</a> A common pitfall, especially in young designers, is to doubt 
+								your own ideas. Early in the project, impostor syndrome affected my ability to present confidently and demonstrate my skills to my boss. I learned to deal with it 
+								by reaching out to the extremely supportive design community. Learning about others' experiences helped me remove my ego from my designs and become a better 
+								listener. 
+							</li>
+						</ul>
+					</p>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/struct-flection.png">
+						</div>
+						<div class="col-md-5 sticky-parent">
+							<div>
+								<h2>
+									I wish I had time to...
+								</h2>
+								<div class="project-desc">
+									<p>
+										<ul>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Validate my design:</a> I wish I had time to test my assumptions. This
+												project came at the second half of my internship, so I did not get a chance to see if my assumptions were true.
+											</li>
+											<li><a style="color:#4F2A8D;font-weight: bold;">Be a part of the development:</a> I wish I had time to develop my designs in Swift.
+												It's a super gratifying feeling to bring your creations to "life!" Best of luck to my colleague!
+											</li>
+										</ul>
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2>Learn more about Struct Club: <a href="https://structclub.squarespace.com/">https://structclub.squarespace.com/</a></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
