@@ -262,18 +262,18 @@ figure {
       width: auto; }
       #colorlib-hero .flexslider .flex-control-nav li {
         display: block;
-        margin-bottom: 10px; }
+        margin-bottom: 20px; }
         #colorlib-hero .flexslider .flex-control-nav li a {
           background: rgba(255, 255, 255, 1);
           -webkit-box-shadow: none;
           box-shadow: none;
-          width: 16px;
-          height: 16px;
+          width: 22px;
+          height: 22px;
           cursor: pointer; }
           #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             background: transparent;
-            border: 8px solid #F75940; }
+            border: 4px solid #F75940; }
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }
     #colorlib-hero .flexslider .slider-text {
