@@ -235,7 +235,7 @@ figure {
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  margin-bottom: 1em;
   clear: both; }
   #colorlib-hero .btn {
     font-size: 24px; }
@@ -430,7 +430,43 @@ body.offcanvas {
     -webkit-box-shadow: 0px 35px 78px -23px rgba(0, 0, 0, 0.33);
     -moz-box-shadow: 0px 35px 78px -23px rgba(0, 0, 0, 0.33);
     box-shadow: 0px 35px 78px -23px rgba(0, 0, 0, 0.33); }
+  
+.arrow{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 3.5s 7;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
 
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 .about-desc h3 {
   font-size: 18px;
   text-transform: uppercase;
