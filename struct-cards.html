@@ -94,10 +94,10 @@
 					</div>
 
 					<!-- PROBLEM SPACE -->
-					<h2>Context & Problem Space</h2>
+					<h2>Creating a class in Edit Mode takes too long... </h2>
 					<p>Struct Club is a creator platform for fitness instructors to create music-inspired classes.<span style="color:#4F2A8D;font-weight: bold;">
-						"Edit Mode" is a set of views that allows users to add moves (i.e. Squats) to songs from Spotify.</span>
-						After 30 qualitative user interviews, our team found that users were creating very long classes: 30-50+ minutes. 
+						"Edit Mode" is a set of views that enables users to create workouts (i.e. circuit training or spin class) with a playlist of songs from Spotify.</span>
+						After 30 user interviews, our team found that users were creating very long classes: 30-50+ minutes. 
 					</p>
 					<div class="row">
 						<div class="col-md-6 image-content">
@@ -124,80 +124,37 @@
 							</div>
 						</div>
 					</div>
+					
+					<br><br>
+					
+					<div class="row">
+						<div class="col-md-5">
+							<h2>Final Solution: <a style="color:#4F2A8D">Card Overlays</a></h2>
+							<p>
+								My solution to the users' goals is a card overlay. It lays on top of the current design, but strips out the navigation to new 
+								views and <a style="color:#4F2A8D;font-weight: bold;">minimizes the number of clicks to accomplish tasks (from 8 to 5)</a>. <br><br> 
+								Before, users had to click on each segment and navigate to a new editing view to update the type of move, intensity, and notes. Now, users 
+								can <a style="color:#4F2A8D;font-weight: bold;">navigate between segments with one tap</a> (purple left & right arrows). 
+								<br><br> 
+								Since the card lays on-top of the timeline view, it enables users to maintain an understanding of their position relative to the entire class. 
+								Now <a style="color:#4F2A8D;font-weight: bold;">users will be even more accurate in the editing process</a>.  
+							</p>
+						</div>
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/cards-final.png">
+						</div>
+					</div>
 
 					<!-- RESEARCH -->
 					<br><br><br><br><br>
+					<h2>Where did I start?</h2>
+					<p>First, let's take a look at <a style="color:#4F2A8D;font-weight: bold;">the previous version of Edit Mode</a>. 
+										There are several visual elements & functionality that need to be addressed to solve our problem.</p>
 					<div class="row">
-					
-					</div>
-					<h2>Research & Solution Formation</h2>
-					<p>The first step is always research. First, I took a look at similar applications that utilize a timeline-editing view and 
-						segments which require extra attention (iMovie, Google Calendar, and the Photos application). After evaluating each app, 
-						<span style="color:#4F2A8D;font-weight: bold;">
-						I asked myself: "how did this app provide a solution to my problem and how can I improve upon it to server my users?"
-						</span>
-					</p>
-					<div class="row">
-						<div class="col-md-6 image-content">
-							<img class="img-responsive" src="images/i-movie.png">
-							<img class="img-responsive" src="images/apple-music.png">
-						</div>
 						<div class="col-md-5">
 							<div>
-								<h2>
-									Not many available solutions
-								</h2>
 								<div class="project-desc">
-									<p>
-										Each application presented options for my solution. At first glance, I found that iMovie followed very 
-										similar conventions to Struct Club. It utilized a scrollable timeline and presented options at the bottom
-										of the screen selected segments. However, <a style="color:#4F2A8D;font-weight: bold;">iMovie's edit mode had the same pitfalls of Struct Club. The edit 
-										process was arduous and I estimated about 8 taps per segment I edited. Google Calendar events (or segments)
-										also required about 6-7 taps per event to change dates, times, recurrences, and color coding.</a> Although, it 
-										required less overall time (likely resulting from the nature of events -> they don't happen all at once).
-									</p>
-								</div>
-								<h2>
-									Formulating a new solution
-								</h2>
-								<div class="project-desc">
-									<p>
-										In turn, I had to turn to unconvential sources like Spotify and Apple Music for inspiration. I took a song overlay from Apple Music 
-										(like the one on the left) and deconstructed its elements. It contained an icon/album cover, title, important information, 
-										and buttons to navigate to and from the next item. In many ways, a song overlay could be classified as a song "card." The card has 
-										key advantages:
-										<ul>
-											<li style="color:#4F2A8D;font-weight: bold;">Contains only the most important information & buttons for the segment</li>
-											<li style="color:#4F2A8D;font-weight: bold;">Hides all unnecessay functionality below it</li>
-											<li style="color:#4F2A8D;font-weight: bold;">Allows for quick navigation between segments (or songs)</li>
-										</ul>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- WIREFRAMING -->
-					<br><br><br><br><br>
-					<h2>Wireframing & Prototyping</h2>
-					<p>
-						The first step of Wireframing (in my design process) is sketching on paper. Then I meet with stakeholders (i.e. my lovely CEO, Amira, and amazing engineer, Eann)
-						to consider business strategy, resource constraints, and feasibility. Next, I begin drafting wireframes & the iteration process follows for the next few weeks.  
-						Ultimately, <a style="color:#4F2A8D;font-weight: bold;">the process completes once all stakeholders feel the design (1) achieves our users' goals and (2) aligns
-							 with our overall strategy.</a> Especially in a start-up, it's also important to consider what SMALL changes will have a BIG impact (80% results 20% effort).
-					</p>
-					<div class="row">
-						<div class="col-md-6 image-content">
-							<img class="img-responsive" src="images/baseline-struct.png">
-						</div>
-						<div class="col-md-5">
-							<div>
-								<h2>Where do I start?</h2>
-								<div class="project-desc">
-									<p>
-										First, let's take a look at <a style="color:#4F2A8D;font-weight: bold;">the previous version of Edit Mode</a>. 
-										There are several visual elements & functionality that need to be addressed to solve our problem. 
-										
+									<p> 
 										<ul>
 											<li><a style="color:#4F2A8D;font-weight: bold;">Timeline:</a> Users can horizontally scroll across a timeline to view their entire workout.</li>
 											<li><a style="color:#4F2A8D;font-weight: bold;">Segment:</a> A segment represents a workout move (i.e. Jumping Jacks) with an intensity (indicated by the color).</li>
@@ -211,7 +168,43 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/baseline-struct.png">
+						</div>
 					</div>
+					<br><br>
+					<div class="row">
+						<div class="col-md-6 image-content">
+							<img class="img-responsive" src="images/i-movie.png">
+						</div>
+						<div class="col-md-5">
+							<div>
+								<h2>
+									Not many available solutions
+								</h2>
+								<div class="project-desc">
+									<p>
+										I found that iMovie followed very similar conventions to Struct Club. It utilized a scrollable timeline and presented options at the bottom
+										of the screen. However, <a style="color:#4F2A8D;font-weight: bold;">iMovie's edit mode had the same pitfalls of Struct Club. The edit 
+										process was arduous and I estimated about 8 taps per segment I edited. Google Calendar events (or segments)
+										also required about 6-7 taps per event to change dates, times, recurrences, and color coding.</a> Although, it 
+										required less overall time (likely resulting from the nature of events -> they don't happen all at once).
+									</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- WIREFRAMING -->
+					<br><br><br><br><br>
+					<h2>Wireframing & Prototyping</h2>
+					<p>
+						First, I started sketching on paper. Then I met with stakeholders (i.e. my lovely CEO, Amira, and amazing engineer, Eann)
+						to consider business strategy, resource constraints, and feasibility. Next, I begin drafting wireframes & the iteration process followed for the next few weeks.  
+						Ultimately, <a style="color:#4F2A8D;font-weight: bold;">the process completes once all stakeholders feel the design (1) achieves our users' goals and (2) aligns
+							 with our overall strategy.</a> Especially in a start-up, it's also important to consider what SMALL changes will have a BIG impact (80% results 20% effort).
+					</p>
 					<br><br>
 					<div class="col-md-5">
 						<h2>Sketches</h2>
@@ -230,8 +223,7 @@
 								<li style="color:#4F2A8D;font-weight: bold;">Allows for quick navigation between segments (or songs)</li>
 							</ul>
 							<br>
-							On the right, I outline some of my ideas for "cards" of segments. The card baseline sketches depict how a user would navigate from card to card. 
-							The card arrangement demonstrates how the data of a segment would be displayed on a card. <a style="color:#4F2A8D;font-weight: bold;">
+							On the right, I outline some of my ideas for "cards" of segments. <a style="color:#4F2A8D;font-weight: bold;">
 								The highlighted blue indicates the chosen design by stakeholders. </a>
 						</p>
 					</div>
@@ -240,7 +232,8 @@
 							<img class="img-responsive" src="images/sketches-1.png">
 						</div>
 					</div>
-
+					
+					<br><br>
 					<div class="row">
 						<div class="col-md-6 image-content">
 							<img class="img-responsive" src="images/drafts.png">
@@ -252,8 +245,7 @@
 									<p>
 										After producing low-fidelity wireframes, <a style="color:#4F2A8D;font-weight: bold;">I moved onto mid-to-high fidelity wireframing in Figma.</a> I produced a number of draft 
 										frames, but these are the highlights! At every step in the design process, it's important to reevaluate whether or not the 
-										solutions create value for users. Sometimes, I can walk myself into the "wouldn't it be cool if" conversation without considering 
-										my users' goals. 
+										solutions create value for users.
 									</p>
 									<p>
 										How do cards help users achieve their goals? 
@@ -264,8 +256,7 @@
 										</ul>
 									</p>
 									<p>
-										Now that the design aligns with user goals, I met with stakeholders to determine which iteration would present the best image to 
-										our users. SPOILER: The chosen design has sparkles around it!
+										SPOILER: The chosen design has sparkles around it!
 									</p>
 								</div>
 							</div>
@@ -273,10 +264,7 @@
 					</div>
 					<br><br>
 					<div class="col-md-5">
-						<h2>Final Version</h2>
-						<p>
-							The final version of the my design...
-						</p>
+						<h2>Final Version!</h2>
 						<p>
 							Now users can happily create workouts with ease. Navigating quickly from one segment to another, user will 
 							be able to spend more time curating workouts and less time hassling between views. The edit process for a single 
@@ -311,13 +299,12 @@
 					<br><br><br><br><br>
 					<h2>Reflection</h2>
 					<p>				
-								
 						Edit Mode Cards tested my design skills more than any other project that summer. I struggled not only in juggling other projects in Marketing and Quality Assurance, but 
 						also in developing my own processes as a ONE-PERSON UX team. I had to learn quickly and develop standards for my work which didn't exist. I guess that's 
 						the beauty of start-ups. I also felt some pressure to not screw everything up! Edit Mode is a core feature set for Struct Club.
 						In the end, I can confidently say I've learned a lot about myself and developing design processes:
 						<ul>
-							<li><a style="color:#4F2A8D;font-weight: bold;">Start out with simple sketches before wireframes:</a> I fell into the trap of starting with high-fidelity, 
+							<li><a style="color:#4F2A8D;font-weight: bold;">Spend enough time with simple sketches before wireframes:</a> I fell into the trap of moving too quickly to high-fidelity, 
 								and I ended up creating a lot of work for myself. I spent too much time trying to make everything pixel perfect when I wasn't even sure it was the solution.
 							</li>
 							<li><a style="color:#4F2A8D;font-weight: bold;">Don't spend so much time prototyping everything for drafts:</a> This is another time-saving tip. I spent waaay too
@@ -353,14 +340,67 @@
 												It's a super gratifying feeling to bring your creations to "life!" Best of luck to my colleague!
 											</li>
 										</ul>
-
+										
+										Learn more about Struct Club: <a href="https://structclub.squarespace.com/" target="_blank">https://structclub.squarespace.com/</a>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<br><br>
-					<h2>Learn more about Struct Club: <a href="https://structclub.squarespace.com/" target="_blank">https://structclub.squarespace.com/</a></h2>
+					
+					<br><br><br>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="arrow">
+								<span></span>
+								
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<!-- Continue Reading -->
+					<br><br><br><br><br>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta">Want to see my other work?</span>
+							<h2 class="colorlib-heading" style="margin-bottom: 2em">Check out my other projects</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="ala.html" class="blog-img"><img src="images/ALA-preview.png" class="img-responsive"></a>
+								<div class="desc">
+									<span><small>October 2020 </small> | <small> Landing Page, Web Design </small></span>
+									<h3><a href="ala.html">USC American Lung Association </a></h3>
+									<p>I designed and developed USC American Lung Association's new website. </p>
+									<a href="ala.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="parq.html" class="blog-img"><img src="images/parq-home.png" class="img-responsive"></a>
+								<div class="desc">
+									<span><small>March 2020 </small> | <small> Full Prototype, UX Design </small></span>
+									<h3><a href="parq.html">Parq</a></h3>
+									<p>I created an app that helps people find parking in busy residential areas.</p>
+									<a href="parq.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="summer-collection.html" class="blog-img"><img src="images/summer-home.png" class="img-responsive"></a>
+								<div class="desc">
+									<span><small>June 2020 </small> | <small> Shop Bundle, UX Design </small></span>
+									<h3><a href="summer-collection.html">Struct Club: Summer Collection</a></h3>
+									<p>I designed the first bundle in Struct Club's fitness class marketplace.  </p>
+									<a href="summer-collection.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

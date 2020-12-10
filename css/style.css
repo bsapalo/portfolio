@@ -445,7 +445,7 @@ body.offcanvas {
     border-right: 5px solid #000;
     transform: rotate(45deg);
     margin: -10px;
-    animation: animate 2.5s 10;
+    animation: animate 2.5s infinite;
 }
 .arrow span:nth-child(2){
     animation-delay: -0.05s;
